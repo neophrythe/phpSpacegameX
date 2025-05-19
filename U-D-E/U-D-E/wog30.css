@@ -1,0 +1,27 @@
+a:active {  
+		 color: #0000FF; 
+		 text-decoration: none;
+}
+a:hover {  
+		color: #FFFFFF; 
+		text-decoration: none;
+}
+a:link {  
+	   color: #FFFFFF; 
+	   text-decoration: none;
+}
+a:visited {  
+		  color: #FFFFFF; 
+		  text-decoration: none;
+}
+
+BODY {
+	FONT-SIZE: 14px; 
+	COLOR: #0078FF; 
+	SCROLLBAR-ARROW-COLOR: 
+	#00FFF6; FONT-FAMILY: Arial, Helvetica, Geneva, Swiss, SunSans-Regular; 
+	SCROLLBAR-BASE-COLOR: #204C64; 
+	BACKGROUND-COLOR: black; 
+	background-image: url(bg.gif);
+	background-attachment: fixed;
+}
