@@ -1,0 +1,1 @@
+This directory is for specific game logic PHP classes (e.g., combat calculations, resource updates).

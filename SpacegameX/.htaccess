@@ -1,0 +1,26 @@
+# SpacegameX Apache .htaccess
+# Used for clean URLs, routing all requests to public/index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Set RewriteBase if your project is in a subdirectory
+    # Example: RewriteBase /your_project_subdirectory/SpacegameX/public/
+    RewriteBase /SpacegameX/public/
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Optional: Disable directory browsing
+Options -Indexes
+
+# Optional: Set default charset
+AddDefaultCharset UTF-8

@@ -1,0 +1,111 @@
+/* Energy styles for SpacegameX */
+
+/* Energy details styling */
+.energy-details {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.energy-warning {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.energy-positive {
+    color: #51cf66;
+    margin-left: 5px;
+}
+
+/* Energy table styling */
+.energy-details {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.energy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.energy-table th,
+.energy-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+.energy-table th {
+    background-color: #2a2a4a;
+    color: #fff;
+}
+
+.energy-table tr:nth-child(even) {
+    background-color: rgba(50, 50, 80, 0.1);
+}
+
+.energy-table .energy-total {
+    background-color: #1e1e38;
+    font-weight: bold;
+}
+
+.positive-balance {
+    color: #51cf66;
+}
+
+.negative-balance {
+    color: #ff6b6b;
+}
+
+/* Resource display enhancements */
+.resource-display {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.resource-display h3 {
+    margin-top: 0;
+    color: #5ba0d0;
+}
+
+.resource-display p {
+    margin: 5px 0;
+}
+
+/* Resources list enhancements */
+.resources-list {
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.resources-list li {
+    padding: 5px 10px;
+    background-color: rgba(50, 50, 80, 0.2);
+    border-radius: 3px;
+}
+
+/* Planet selector styling */
+.planet-selector {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.planet-selector select {
+    padding: 5px 10px;
+    background-color: #2a2a4a;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+}

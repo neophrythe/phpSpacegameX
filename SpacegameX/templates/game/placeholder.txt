@@ -1,0 +1,1 @@
+This directory is for main game view templates.

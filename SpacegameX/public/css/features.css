@@ -1,0 +1,501 @@
+/* Space Game X - Feature Specific Styles */
+
+/* Shield Management Styles */
+.shield-status {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.shield-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.shield-indicator.active {
+    background-color: rgba(0, 100, 255, 0.3);
+    border: 1px solid #0088ff;
+}
+
+.shield-indicator.inactive {
+    background-color: rgba(100, 100, 100, 0.3);
+    border: 1px solid #555;
+}
+
+.shield-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.shield-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shield-details {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.shield-costs {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.btn-shield {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-shield.activate {
+    background-color: #008855;
+    color: white;
+}
+
+.btn-shield.activate:hover {
+    background-color: #00aa66;
+}
+
+.btn-shield.activate:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.btn-shield.deactivate {
+    background-color: #aa0000;
+    color: white;
+}
+
+.btn-shield.deactivate:hover {
+    background-color: #cc0000;
+}
+
+.resources-warning,
+.cooldown-warning {
+    color: #ff5555;
+    margin-top: 10px;
+}
+
+/* Asteroid Management Styles */
+.asteroid-status {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.asteroid-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.asteroid-table th, 
+.asteroid-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.asteroid-table th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #aaddff;
+}
+
+.asteroid-mining {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.btn-asteroid {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #552288;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-asteroid:hover {
+    background-color: #773399;
+}
+
+.btn-asteroid:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #335599;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-small:hover {
+    background-color: #4477bb;
+}
+
+.btn-small.danger {
+    background-color: #992233;
+}
+
+.btn-small.danger:hover {
+    background-color: #bb3344;
+}
+
+.max-warning {
+    color: #ffaa55;
+    font-weight: bold;
+}
+
+/* Alliance Research Styles */
+.alliance-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.alliance-resources {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.research-queue {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(30, 30, 50, 0.7);
+    border-radius: 8px;
+}
+
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.queue-table th, 
+.queue-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.queue-table th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #aaddff;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #00aa66;
+}
+
+.research-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.research-category {
+    padding: 15px;
+    background-color: rgba(30, 30, 50, 0.7);
+    border-radius: 8px;
+}
+
+.research-item {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-left: 3px solid #335599;
+}
+
+.research-item.disabled {
+    opacity: 0.7;
+    border-left-color: #555;
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.max-level {
+    color: #ffaa22;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.research-description {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+.research-effects,
+.research-costs,
+.research-requirements {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.fulfilled {
+    color: #55dd55;
+}
+
+.not-fulfilled {
+    color: #ff5555;
+}
+
+.research-action {
+    text-align: center;
+}
+
+.btn-research {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #335599;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-research:hover {
+    background-color: #4477bb;
+}
+
+.btn-research:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.alliance-research-bonuses {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.bonuses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bonuses-table th, 
+.bonuses-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+.bonuses-table th {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #aaddff;
+}
+
+/* Capital Planet Management Styles */
+.capital-planet-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.planet-card {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(30, 30, 50, 0.7);
+    border-radius: 8px;
+    border-top: 3px solid #335599;
+}
+
+.planet-card.capital {
+    border-top-color: #ffaa22;
+    background-color: rgba(60, 50, 20, 0.7);
+}
+
+.planet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.capital-badge {
+    background-color: #ffaa22;
+    color: #000;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.bonus-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bonus-list li {
+    padding: 5px 0;
+}
+
+.bonus {
+    color: #55dd55;
+    font-weight: bold;
+}
+
+.capital-planet-change {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(30, 30, 50, 0.7);
+    border-radius: 8px;
+}
+
+.cooldown-notice {
+    padding: 15px;
+    background-color: rgba(80, 30, 30, 0.4);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.warning {
+    color: #ff5555;
+    font-weight: bold;
+}
+
+.change-warning {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: rgba(80, 30, 30, 0.4);
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.btn-capital-change {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #992233;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-capital-change:hover {
+    background-color: #bb3344;
+}
+
+.planets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.planet-quick-info p {
+    margin: 5px 0;
+}
+
+.resource-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.planet-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.capital-benefits-info {
+    padding: 20px;
+    background-color: rgba(20, 20, 40, 0.7);
+    border-radius: 8px;
+}
+
+.benefits-explanation {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* General Alert Styling */
+.alert {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.alert.success {
+    background-color: rgba(0, 100, 0, 0.3);
+    border: 1px solid #00aa00;
+    color: #55dd55;
+}
+
+.alert.error {
+    background-color: rgba(100, 0, 0, 0.3);
+    border: 1px solid #aa0000;
+    color: #ff5555;
+}
+
+.no-alliance,
+.no-capital-notice {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(30, 30, 50, 0.4);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}

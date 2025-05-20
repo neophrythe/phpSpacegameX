@@ -1,0 +1,216 @@
+
+/* General Message Container */
+.messages-container {
+    background-color: #0A547C; /* Similar to TD background in wog-2.0.css */
+    padding: 15px;
+    border: 1px solid #204C64; /* Similar to scrollbar base in wog-2.0.css */
+    color: #EBEBEB; /* Default text color from wog-2.0.css */
+    margin-bottom: 20px;
+}
+
+.messages-container h2, .messages-container h3 {
+    color: #EBEBEB;
+    border-bottom: 1px solid #204C64;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Message Navigation Tabs */
+.message-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    border-bottom: 2px solid #103050; /* Similar to .head background */
+    display: flex;
+}
+
+.message-nav-item {
+    margin-right: 5px;
+}
+
+.message-nav-item a {
+    display: block;
+    padding: 8px 15px;
+    background-color: #103050; /* Darker tab background */
+    color: #EBEBEB;
+    text-decoration: none;
+    border: 1px solid #204C64;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+
+.message-nav-item a:hover {
+    background-color: #204C64; /* Lighter on hover */
+    color: #00DEFF; /* Highlight color from wog-2.0.css */
+}
+
+.message-nav-item.active a {
+    background-color: #0A547C; /* Active tab matches container background */
+    color: #FFFFFF;
+    border-bottom: 1px solid #0A547C; /* Blend with container */
+}
+
+/* Message Table Styling (Inbox & Sent) */
+.messages-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.messages-table th, .messages-table td {
+    border: 1px solid #204C64;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px; /* Consistent with TD in wog-2.0.css */
+}
+
+.messages-table th {
+    background-color: #103050; /* .head style from wog-2.0.css */
+    color: #EBEBEB;
+    font-weight: bold;
+}
+
+.messages-table tr:nth-child(even) td {
+    background-color: #0E4666; /* Slightly different for row striping */
+}
+
+.messages-table tr:hover td {
+    background-color: #204C64;
+}
+
+.messages-table .unread-message {
+    font-weight: bold;
+    color: #FFFFFF; /* Brighter for unread */
+}
+
+.messages-table .unread-message a {
+    color: #FFFFFF;
+}
+
+.messages-table a {
+    color: #00DEFF; /* Highlight color for links */
+    text-decoration: underline;
+}
+
+.messages-table a:hover {
+    color: #FFFFFF;
+}
+
+.messages-table input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Message View Styling */
+.message-view-container {
+    padding: 15px;
+    background-color: #0E4666; /* Slightly darker than main container */
+    border: 1px solid #204C64;
+    margin-bottom: 15px;
+}
+
+.message-view-header p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.message-view-header strong {
+    color: #FFFFFF;
+}
+
+.message-body {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0A547C;
+    border: 1px dashed #204C64;
+    min-height: 100px;
+    white-space: pre-wrap; /* Preserve line breaks and spaces */
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Message Compose Form */
+.message-compose-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #EBEBEB;
+}
+
+.message-compose-form input[type="text"],
+.message-compose-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #103050;
+    border: 1px solid #204C64;
+    color: #EBEBEB;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.message-compose-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Action Buttons */
+.message-actions button, .message-actions input[type="submit"], .message-actions a.button {
+    background-color: #0A547C; /* .galbutton style */
+    color: #EBEBEB;
+    border: 1px solid #000000; /* .galbutton style */
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 12px; /* .galbutton style */
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.message-actions button:hover, .message-actions input[type="submit"]:hover, .message-actions a.button:hover {
+    background-color: #204C64;
+    color: #00DEFF;
+}
+
+.message-actions .delete-button {
+    background-color: #7C0A0A; /* Reddish for delete */
+}
+.message-actions .delete-button:hover {
+    background-color: #A00A0A;
+}
+
+
+/* Pagination */
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination a, .pagination span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #204C64;
+    background-color: #103050;
+    color: #EBEBEB;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #204C64;
+    color: #00DEFF;
+}
+
+.pagination .current-page {
+    background-color: #0A547C;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* No messages info */
+.no-messages {
+    padding: 15px;
+    text-align: center;
+    color: #B0B0B0;
+    font-style: italic;
+}
